@@ -12,7 +12,7 @@ Sometime we need container images which have ssh server so we can work remotely.
 I am using podman, these commands will also work on docker
 1. Start container
 If running first time
-podman run -d hemu312/fedora-ssh:38
+podman run -d -p 5555:22 hemu312/fedora-ssh:38
 If container already exists
 podman start ContainerId
 
